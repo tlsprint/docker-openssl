@@ -31,7 +31,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -42,7 +42,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -53,7 +53,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -96,7 +96,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -107,7 +107,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -118,7 +118,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -161,7 +161,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -172,7 +172,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -183,7 +183,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -226,7 +226,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -237,7 +237,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -248,7 +248,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -291,7 +291,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -302,7 +302,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -313,7 +313,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -356,7 +356,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -367,7 +367,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -378,7 +378,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -421,7 +421,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -432,7 +432,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -443,7 +443,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -486,7 +486,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -497,7 +497,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -508,7 +508,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -551,7 +551,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -562,7 +562,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -573,7 +573,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -616,7 +616,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -627,7 +627,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -638,7 +638,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -681,7 +681,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -692,7 +692,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -703,7 +703,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -746,7 +746,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -757,7 +757,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -768,7 +768,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -811,7 +811,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -822,7 +822,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -833,7 +833,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -876,7 +876,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -887,7 +887,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -898,7 +898,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -941,7 +941,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -952,7 +952,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -963,7 +963,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1006,7 +1006,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1017,7 +1017,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1028,7 +1028,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1071,7 +1071,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1082,7 +1082,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1093,7 +1093,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1136,7 +1136,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1147,7 +1147,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1158,7 +1158,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1201,7 +1201,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1212,7 +1212,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1223,7 +1223,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1266,7 +1266,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1277,7 +1277,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1288,7 +1288,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1331,7 +1331,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1342,7 +1342,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1353,7 +1353,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1396,7 +1396,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1407,7 +1407,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1418,7 +1418,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1461,7 +1461,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1472,7 +1472,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1483,7 +1483,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1526,7 +1526,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1537,7 +1537,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1548,7 +1548,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1591,7 +1591,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1602,7 +1602,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1613,7 +1613,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1656,7 +1656,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1667,7 +1667,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1678,7 +1678,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1721,7 +1721,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1732,7 +1732,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1743,7 +1743,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1786,7 +1786,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1797,7 +1797,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1808,7 +1808,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1851,7 +1851,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1862,7 +1862,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1873,7 +1873,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1916,7 +1916,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1927,7 +1927,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1938,7 +1938,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1981,7 +1981,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -1992,7 +1992,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2003,7 +2003,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2046,7 +2046,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2057,7 +2057,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2068,7 +2068,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2111,7 +2111,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2122,7 +2122,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2133,7 +2133,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2176,7 +2176,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2187,7 +2187,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2198,7 +2198,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2241,7 +2241,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2252,7 +2252,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2263,7 +2263,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2306,7 +2306,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2317,7 +2317,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2328,7 +2328,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2371,7 +2371,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2382,7 +2382,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2393,7 +2393,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2436,7 +2436,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2447,7 +2447,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2458,7 +2458,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2501,7 +2501,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2512,7 +2512,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2523,7 +2523,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2566,7 +2566,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2577,7 +2577,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2588,7 +2588,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2631,7 +2631,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2642,7 +2642,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2653,7 +2653,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2696,7 +2696,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2707,7 +2707,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2718,7 +2718,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2761,7 +2761,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2772,7 +2772,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2783,7 +2783,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2826,7 +2826,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2837,7 +2837,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2848,7 +2848,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2891,7 +2891,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2902,7 +2902,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2913,7 +2913,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2956,7 +2956,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2967,7 +2967,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -2978,7 +2978,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3021,7 +3021,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3032,7 +3032,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3043,7 +3043,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3086,7 +3086,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3097,7 +3097,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3108,7 +3108,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3151,7 +3151,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3162,7 +3162,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3173,7 +3173,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3216,7 +3216,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3227,7 +3227,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3238,7 +3238,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3281,7 +3281,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3292,7 +3292,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3303,7 +3303,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3346,7 +3346,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3357,7 +3357,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3368,7 +3368,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3411,7 +3411,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3422,7 +3422,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3433,7 +3433,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3476,7 +3476,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3487,7 +3487,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3498,7 +3498,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3541,7 +3541,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3552,7 +3552,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3563,7 +3563,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3606,7 +3606,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3617,7 +3617,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3628,7 +3628,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3671,7 +3671,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3682,7 +3682,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3693,7 +3693,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3736,7 +3736,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3747,7 +3747,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3758,7 +3758,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3801,7 +3801,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3812,7 +3812,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3823,7 +3823,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3866,7 +3866,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3877,7 +3877,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3888,7 +3888,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3931,7 +3931,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3942,7 +3942,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3953,7 +3953,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -3996,7 +3996,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4007,7 +4007,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4018,7 +4018,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4061,7 +4061,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4072,7 +4072,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4083,7 +4083,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4126,7 +4126,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4137,7 +4137,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4148,7 +4148,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4191,7 +4191,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4202,7 +4202,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4213,7 +4213,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4256,7 +4256,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4267,7 +4267,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4278,7 +4278,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4321,7 +4321,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4332,7 +4332,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4343,7 +4343,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4386,7 +4386,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4397,7 +4397,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4408,7 +4408,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4451,7 +4451,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4462,7 +4462,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4473,7 +4473,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4516,7 +4516,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4527,7 +4527,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4538,7 +4538,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4581,7 +4581,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4592,7 +4592,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4603,7 +4603,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4646,7 +4646,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4657,7 +4657,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4668,7 +4668,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4711,7 +4711,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4722,7 +4722,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4733,7 +4733,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4776,7 +4776,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4787,7 +4787,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4798,7 +4798,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4841,7 +4841,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4852,7 +4852,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4863,7 +4863,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4906,7 +4906,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4917,7 +4917,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4928,7 +4928,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4971,7 +4971,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4982,7 +4982,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -4993,7 +4993,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5036,7 +5036,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5047,7 +5047,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5058,7 +5058,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5101,7 +5101,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5112,7 +5112,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5123,7 +5123,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5166,7 +5166,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5177,7 +5177,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5188,7 +5188,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5231,7 +5231,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5242,7 +5242,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5253,7 +5253,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5296,7 +5296,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5307,7 +5307,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5318,7 +5318,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5361,7 +5361,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5372,7 +5372,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5383,7 +5383,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5426,7 +5426,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5437,7 +5437,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5448,7 +5448,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5491,7 +5491,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5502,7 +5502,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5513,7 +5513,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5556,7 +5556,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5567,7 +5567,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5578,7 +5578,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5621,7 +5621,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5632,7 +5632,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5643,7 +5643,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5686,7 +5686,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5697,7 +5697,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5708,7 +5708,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5751,7 +5751,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5762,7 +5762,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5773,7 +5773,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5816,7 +5816,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5827,7 +5827,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5838,7 +5838,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5881,7 +5881,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5892,7 +5892,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5903,7 +5903,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5946,7 +5946,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5957,7 +5957,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -5968,7 +5968,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6011,7 +6011,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6022,7 +6022,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6033,7 +6033,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6076,7 +6076,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6087,7 +6087,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6098,7 +6098,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6141,7 +6141,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6152,7 +6152,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6163,7 +6163,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6206,7 +6206,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6217,7 +6217,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6228,7 +6228,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6271,7 +6271,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6282,7 +6282,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6293,7 +6293,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6336,7 +6336,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6347,7 +6347,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6358,7 +6358,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6401,7 +6401,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6412,7 +6412,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6423,7 +6423,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6466,7 +6466,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6477,7 +6477,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6488,7 +6488,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6531,7 +6531,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6542,7 +6542,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6553,7 +6553,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6596,7 +6596,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6607,7 +6607,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6618,7 +6618,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6661,7 +6661,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6672,7 +6672,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6683,7 +6683,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6726,7 +6726,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6737,7 +6737,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6748,7 +6748,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6791,7 +6791,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6802,7 +6802,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6813,7 +6813,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6856,7 +6856,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6867,7 +6867,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6878,7 +6878,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6921,7 +6921,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6932,7 +6932,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6943,7 +6943,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6986,7 +6986,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -6997,7 +6997,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7008,7 +7008,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7051,7 +7051,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7062,7 +7062,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7073,7 +7073,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7116,7 +7116,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7127,7 +7127,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7138,7 +7138,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7181,7 +7181,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7192,7 +7192,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7203,7 +7203,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7246,7 +7246,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7257,7 +7257,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7268,7 +7268,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7311,7 +7311,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7322,7 +7322,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7333,7 +7333,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7376,7 +7376,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7387,7 +7387,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7398,7 +7398,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7441,7 +7441,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7452,7 +7452,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7463,7 +7463,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7506,7 +7506,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7517,7 +7517,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7528,7 +7528,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7571,7 +7571,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7582,7 +7582,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7593,7 +7593,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7636,7 +7636,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7647,7 +7647,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7658,7 +7658,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7701,7 +7701,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7712,7 +7712,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7723,7 +7723,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7766,7 +7766,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7777,7 +7777,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7788,7 +7788,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7831,7 +7831,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7842,7 +7842,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7853,7 +7853,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7896,7 +7896,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7907,7 +7907,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7918,7 +7918,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7961,7 +7961,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7972,7 +7972,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -7983,7 +7983,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -8026,7 +8026,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -8037,7 +8037,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -8048,7 +8048,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -8091,7 +8091,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -8102,7 +8102,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -8113,7 +8113,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -8156,7 +8156,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -8167,7 +8167,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -8178,7 +8178,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -8221,7 +8221,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS10
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -8232,7 +8232,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS11
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
@@ -8243,7 +8243,7 @@ steps:
       - connector
         --targetHost sut
         --protocolVersion TLS12
-        --cipherSuites "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
