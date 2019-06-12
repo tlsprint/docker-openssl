@@ -35,6 +35,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.7
+      dockerfile: dockerfiles/0.9.7/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -77,6 +89,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.7a
+      dockerfile: dockerfiles/0.9.7a/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -121,6 +145,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.7b
+      dockerfile: dockerfiles/0.9.7b/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -163,6 +199,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.7c
+      dockerfile: dockerfiles/0.9.7c/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -207,6 +255,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.7d
+      dockerfile: dockerfiles/0.9.7d/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -249,6 +309,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.7e
+      dockerfile: dockerfiles/0.9.7e/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -293,6 +365,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.7f
+      dockerfile: dockerfiles/0.9.7f/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -335,6 +419,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.7g
+      dockerfile: dockerfiles/0.9.7g/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -379,6 +475,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.7h
+      dockerfile: dockerfiles/0.9.7h/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -421,6 +529,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.7i
+      dockerfile: dockerfiles/0.9.7i/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -465,6 +585,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.7j
+      dockerfile: dockerfiles/0.9.7j/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -507,6 +639,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.7k
+      dockerfile: dockerfiles/0.9.7k/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -551,6 +695,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.7l
+      dockerfile: dockerfiles/0.9.7l/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -593,6 +749,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.7m
+      dockerfile: dockerfiles/0.9.7m/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -637,6 +805,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8
+      dockerfile: dockerfiles/0.9.8/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -679,6 +859,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8a
+      dockerfile: dockerfiles/0.9.8a/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -723,6 +915,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8b
+      dockerfile: dockerfiles/0.9.8b/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -765,6 +969,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8c
+      dockerfile: dockerfiles/0.9.8c/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -809,6 +1025,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8d
+      dockerfile: dockerfiles/0.9.8d/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -851,6 +1079,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8e
+      dockerfile: dockerfiles/0.9.8e/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -895,6 +1135,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8f
+      dockerfile: dockerfiles/0.9.8f/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -937,6 +1189,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8g
+      dockerfile: dockerfiles/0.9.8g/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -981,6 +1245,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8h
+      dockerfile: dockerfiles/0.9.8h/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -1023,6 +1299,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8i
+      dockerfile: dockerfiles/0.9.8i/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -1067,6 +1355,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8j
+      dockerfile: dockerfiles/0.9.8j/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -1109,6 +1409,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8k
+      dockerfile: dockerfiles/0.9.8k/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -1153,6 +1465,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8l
+      dockerfile: dockerfiles/0.9.8l/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -1195,6 +1519,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8m
+      dockerfile: dockerfiles/0.9.8m/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -1239,6 +1575,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8n
+      dockerfile: dockerfiles/0.9.8n/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -1281,6 +1629,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8o
+      dockerfile: dockerfiles/0.9.8o/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -1325,6 +1685,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8p
+      dockerfile: dockerfiles/0.9.8p/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -1367,6 +1739,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8q
+      dockerfile: dockerfiles/0.9.8q/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -1411,6 +1795,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8r
+      dockerfile: dockerfiles/0.9.8r/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -1453,6 +1849,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8s
+      dockerfile: dockerfiles/0.9.8s/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -1497,6 +1905,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8t
+      dockerfile: dockerfiles/0.9.8t/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -1539,6 +1959,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8u
+      dockerfile: dockerfiles/0.9.8u/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -1583,6 +2015,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8v
+      dockerfile: dockerfiles/0.9.8v/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -1625,6 +2069,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8w
+      dockerfile: dockerfiles/0.9.8w/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -1669,6 +2125,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8x
+      dockerfile: dockerfiles/0.9.8x/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -1711,6 +2179,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8y
+      dockerfile: dockerfiles/0.9.8y/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -1755,6 +2235,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8za
+      dockerfile: dockerfiles/0.9.8za/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -1797,6 +2289,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8zb
+      dockerfile: dockerfiles/0.9.8zb/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -1841,6 +2345,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8zc
+      dockerfile: dockerfiles/0.9.8zc/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -1883,6 +2399,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8zd
+      dockerfile: dockerfiles/0.9.8zd/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -1927,6 +2455,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8ze
+      dockerfile: dockerfiles/0.9.8ze/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -1969,6 +2509,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8zf
+      dockerfile: dockerfiles/0.9.8zf/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -2013,6 +2565,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8zg
+      dockerfile: dockerfiles/0.9.8zg/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -2055,6 +2619,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 0.9.8zh
+      dockerfile: dockerfiles/0.9.8zh/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -2099,6 +2675,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.0
+      dockerfile: dockerfiles/1.0.0/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -2141,6 +2729,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.0a
+      dockerfile: dockerfiles/1.0.0a/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -2185,6 +2785,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.0b
+      dockerfile: dockerfiles/1.0.0b/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -2227,6 +2839,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.0c
+      dockerfile: dockerfiles/1.0.0c/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -2271,6 +2895,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.0d
+      dockerfile: dockerfiles/1.0.0d/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -2313,6 +2949,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.0e
+      dockerfile: dockerfiles/1.0.0e/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -2357,6 +3005,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.0f
+      dockerfile: dockerfiles/1.0.0f/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -2399,6 +3059,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.0g
+      dockerfile: dockerfiles/1.0.0g/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -2443,6 +3115,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.0h
+      dockerfile: dockerfiles/1.0.0h/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -2485,6 +3169,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.0i
+      dockerfile: dockerfiles/1.0.0i/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -2529,6 +3225,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.0j
+      dockerfile: dockerfiles/1.0.0j/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -2571,6 +3279,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.0k
+      dockerfile: dockerfiles/1.0.0k/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -2615,6 +3335,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.0l
+      dockerfile: dockerfiles/1.0.0l/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -2657,6 +3389,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.0m
+      dockerfile: dockerfiles/1.0.0m/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -2701,6 +3445,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.0n
+      dockerfile: dockerfiles/1.0.0n/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -2743,6 +3499,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.0o
+      dockerfile: dockerfiles/1.0.0o/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -2787,6 +3555,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.0p
+      dockerfile: dockerfiles/1.0.0p/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -2829,6 +3609,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.0q
+      dockerfile: dockerfiles/1.0.0q/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -2873,6 +3665,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.0r
+      dockerfile: dockerfiles/1.0.0r/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -2916,6 +3720,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.0s
+      dockerfile: dockerfiles/1.0.0s/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -2958,6 +3774,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.0t
+      dockerfile: dockerfiles/1.0.0t/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -3024,6 +3852,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.1
+      dockerfile: dockerfiles/1.0.1/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -3088,6 +3928,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.1a
+      dockerfile: dockerfiles/1.0.1a/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -3154,6 +4006,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.1b
+      dockerfile: dockerfiles/1.0.1b/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -3218,6 +4082,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.1c
+      dockerfile: dockerfiles/1.0.1c/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -3284,6 +4160,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.1d
+      dockerfile: dockerfiles/1.0.1d/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -3348,6 +4236,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.1e
+      dockerfile: dockerfiles/1.0.1e/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -3414,6 +4314,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.1f
+      dockerfile: dockerfiles/1.0.1f/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -3478,6 +4390,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.1g
+      dockerfile: dockerfiles/1.0.1g/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -3544,6 +4468,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.1h
+      dockerfile: dockerfiles/1.0.1h/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -3608,6 +4544,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.1i
+      dockerfile: dockerfiles/1.0.1i/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -3674,6 +4622,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.1j
+      dockerfile: dockerfiles/1.0.1j/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -3738,6 +4698,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.1k
+      dockerfile: dockerfiles/1.0.1k/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -3804,6 +4776,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.1l
+      dockerfile: dockerfiles/1.0.1l/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -3868,6 +4852,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.1m
+      dockerfile: dockerfiles/1.0.1m/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -3934,6 +4930,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.1n
+      dockerfile: dockerfiles/1.0.1n/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -3998,6 +5006,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.1o
+      dockerfile: dockerfiles/1.0.1o/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -4064,6 +5084,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.1p
+      dockerfile: dockerfiles/1.0.1p/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -4128,6 +5160,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.1q
+      dockerfile: dockerfiles/1.0.1q/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -4194,6 +5238,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.1r
+      dockerfile: dockerfiles/1.0.1r/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -4258,6 +5314,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.1s
+      dockerfile: dockerfiles/1.0.1s/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -4324,6 +5392,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.1t
+      dockerfile: dockerfiles/1.0.1t/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -4388,6 +5468,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.1u
+      dockerfile: dockerfiles/1.0.1u/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -4454,6 +5546,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.2
+      dockerfile: dockerfiles/1.0.2/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -4518,6 +5622,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.2a
+      dockerfile: dockerfiles/1.0.2a/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -4584,6 +5700,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.2b
+      dockerfile: dockerfiles/1.0.2b/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -4648,6 +5776,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.2c
+      dockerfile: dockerfiles/1.0.2c/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -4714,6 +5854,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.2d
+      dockerfile: dockerfiles/1.0.2d/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -4778,6 +5930,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.2e
+      dockerfile: dockerfiles/1.0.2e/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -4844,6 +6008,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.2f
+      dockerfile: dockerfiles/1.0.2f/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -4908,6 +6084,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.2g
+      dockerfile: dockerfiles/1.0.2g/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -4974,6 +6162,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.2h
+      dockerfile: dockerfiles/1.0.2h/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -5038,6 +6238,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.2i
+      dockerfile: dockerfiles/1.0.2i/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -5104,6 +6316,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.2j
+      dockerfile: dockerfiles/1.0.2j/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -5168,6 +6392,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.2k
+      dockerfile: dockerfiles/1.0.2k/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -5234,6 +6470,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.2l
+      dockerfile: dockerfiles/1.0.2l/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -5298,6 +6546,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.2m
+      dockerfile: dockerfiles/1.0.2m/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -5364,6 +6624,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.2n
+      dockerfile: dockerfiles/1.0.2n/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -5428,6 +6700,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.2o
+      dockerfile: dockerfiles/1.0.2o/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -5494,6 +6778,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.2p
+      dockerfile: dockerfiles/1.0.2p/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -5558,6 +6854,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.2q
+      dockerfile: dockerfiles/1.0.2q/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -5624,6 +6932,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.2r
+      dockerfile: dockerfiles/1.0.2r/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -5688,6 +7008,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.0.2s
+      dockerfile: dockerfiles/1.0.2s/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -5754,6 +7086,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.1.0
+      dockerfile: dockerfiles/1.1.0/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -5818,6 +7162,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.1.0a
+      dockerfile: dockerfiles/1.1.0a/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -5884,6 +7240,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.1.0b
+      dockerfile: dockerfiles/1.1.0b/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -5948,6 +7316,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.1.0c
+      dockerfile: dockerfiles/1.1.0c/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -6014,6 +7394,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.1.0d
+      dockerfile: dockerfiles/1.1.0d/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -6078,6 +7470,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.1.0e
+      dockerfile: dockerfiles/1.1.0e/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -6144,6 +7548,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.1.0f
+      dockerfile: dockerfiles/1.1.0f/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -6208,6 +7624,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.1.0g
+      dockerfile: dockerfiles/1.1.0g/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -6274,6 +7702,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.1.0h
+      dockerfile: dockerfiles/1.1.0h/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -6338,6 +7778,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.1.0i
+      dockerfile: dockerfiles/1.1.0i/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -6404,6 +7856,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.1.0j
+      dockerfile: dockerfiles/1.1.0j/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -6468,6 +7932,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.1.0k
+      dockerfile: dockerfiles/1.1.0k/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -6534,6 +8010,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.1.1
+      dockerfile: dockerfiles/1.1.1/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -6598,6 +8086,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.1.1a
+      dockerfile: dockerfiles/1.1.1a/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
@@ -6664,6 +8164,18 @@ steps:
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
 
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.1.1b
+      dockerfile: dockerfiles/1.1.1b/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+
 volumes:
     # Expose host docker to build steps
   - name: docker
@@ -6728,6 +8240,18 @@ steps:
         --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
         --test | tee result.log
       - "grep 'ApplicationData: APPLICATION|ConnectionClosed' result.log"
+
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: tlsprint/openssl
+      tags: 1.1.1c
+      dockerfile: dockerfiles/1.1.1c/Dockerfile
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
 
 volumes:
     # Expose host docker to build steps
