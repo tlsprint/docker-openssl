@@ -1,3 +1,14 @@
+from distutils.version import LooseVersion
+
+
+def get_supported_tls(version):
+    version = LooseVersion(version)
+    if version < LooseVersion("1.0.1"):
+        return ["TLS10"]
+    else:
+        return ["TLS10", "TLS11", "TLS12"]
+
+
 def extract_versions(tags):
     # Only keep the tags that mark a release. These start with 'OpenSSL'.
     tags = [tag for tag in tags if tag.startswith("OpenSSL")]
@@ -25,9 +36,6 @@ def extract_versions(tags):
 
     # Add info about supported TLS versions
     for info in version_info:
-        if info["version"] < "1.0.1":
-            info["supported_tls"] = ["TLS10"]
-        else:
-            info["supported_tls"] = ["TLS10", "TLS11", "TLS12"]
+        info["supported_tls"] = get_supported_tls(info["version"])
 
     return version_info
