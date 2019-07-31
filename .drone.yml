@@ -5,13 +5,11 @@ name: 0.9.7
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7
-      dockerfile: dockerfiles/0.9.7/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.7
+        --file dockerfiles/0.9.7/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -66,13 +64,11 @@ name: 0.9.7a
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7a
-      dockerfile: dockerfiles/0.9.7a/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.7a
+        --file dockerfiles/0.9.7a/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -127,13 +123,11 @@ name: 0.9.7b
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7b
-      dockerfile: dockerfiles/0.9.7b/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.7b
+        --file dockerfiles/0.9.7b/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -188,13 +182,11 @@ name: 0.9.7c
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7c
-      dockerfile: dockerfiles/0.9.7c/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.7c
+        --file dockerfiles/0.9.7c/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -249,13 +241,11 @@ name: 0.9.7d
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7d
-      dockerfile: dockerfiles/0.9.7d/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.7d
+        --file dockerfiles/0.9.7d/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -310,13 +300,11 @@ name: 0.9.7e
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7e
-      dockerfile: dockerfiles/0.9.7e/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.7e
+        --file dockerfiles/0.9.7e/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -371,13 +359,11 @@ name: 0.9.7f
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7f
-      dockerfile: dockerfiles/0.9.7f/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.7f
+        --file dockerfiles/0.9.7f/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -432,13 +418,11 @@ name: 0.9.7g
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7g
-      dockerfile: dockerfiles/0.9.7g/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.7g
+        --file dockerfiles/0.9.7g/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -493,13 +477,11 @@ name: 0.9.7h
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7h
-      dockerfile: dockerfiles/0.9.7h/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.7h
+        --file dockerfiles/0.9.7h/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -554,13 +536,11 @@ name: 0.9.7i
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7i
-      dockerfile: dockerfiles/0.9.7i/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.7i
+        --file dockerfiles/0.9.7i/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -615,13 +595,11 @@ name: 0.9.7j
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7j
-      dockerfile: dockerfiles/0.9.7j/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.7j
+        --file dockerfiles/0.9.7j/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -676,13 +654,11 @@ name: 0.9.7k
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7k
-      dockerfile: dockerfiles/0.9.7k/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.7k
+        --file dockerfiles/0.9.7k/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -737,13 +713,11 @@ name: 0.9.7l
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7l
-      dockerfile: dockerfiles/0.9.7l/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.7l
+        --file dockerfiles/0.9.7l/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -798,13 +772,11 @@ name: 0.9.7m
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7m
-      dockerfile: dockerfiles/0.9.7m/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.7m
+        --file dockerfiles/0.9.7m/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -859,13 +831,11 @@ name: 0.9.8
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8
-      dockerfile: dockerfiles/0.9.8/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8
+        --file dockerfiles/0.9.8/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -920,13 +890,11 @@ name: 0.9.8a
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8a
-      dockerfile: dockerfiles/0.9.8a/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8a
+        --file dockerfiles/0.9.8a/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -981,13 +949,11 @@ name: 0.9.8b
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8b
-      dockerfile: dockerfiles/0.9.8b/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8b
+        --file dockerfiles/0.9.8b/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -1042,13 +1008,11 @@ name: 0.9.8c
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8c
-      dockerfile: dockerfiles/0.9.8c/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8c
+        --file dockerfiles/0.9.8c/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -1103,13 +1067,11 @@ name: 0.9.8d
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8d
-      dockerfile: dockerfiles/0.9.8d/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8d
+        --file dockerfiles/0.9.8d/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -1164,13 +1126,11 @@ name: 0.9.8e
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8e
-      dockerfile: dockerfiles/0.9.8e/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8e
+        --file dockerfiles/0.9.8e/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -1225,13 +1185,11 @@ name: 0.9.8f
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8f
-      dockerfile: dockerfiles/0.9.8f/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8f
+        --file dockerfiles/0.9.8f/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -1286,13 +1244,11 @@ name: 0.9.8g
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8g
-      dockerfile: dockerfiles/0.9.8g/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8g
+        --file dockerfiles/0.9.8g/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -1347,13 +1303,11 @@ name: 0.9.8h
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8h
-      dockerfile: dockerfiles/0.9.8h/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8h
+        --file dockerfiles/0.9.8h/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -1408,13 +1362,11 @@ name: 0.9.8i
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8i
-      dockerfile: dockerfiles/0.9.8i/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8i
+        --file dockerfiles/0.9.8i/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -1469,13 +1421,11 @@ name: 0.9.8j
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8j
-      dockerfile: dockerfiles/0.9.8j/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8j
+        --file dockerfiles/0.9.8j/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -1530,13 +1480,11 @@ name: 0.9.8k
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8k
-      dockerfile: dockerfiles/0.9.8k/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8k
+        --file dockerfiles/0.9.8k/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -1591,13 +1539,11 @@ name: 0.9.8l
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8l
-      dockerfile: dockerfiles/0.9.8l/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8l
+        --file dockerfiles/0.9.8l/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -1652,13 +1598,11 @@ name: 0.9.8m
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8m
-      dockerfile: dockerfiles/0.9.8m/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8m
+        --file dockerfiles/0.9.8m/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -1713,13 +1657,11 @@ name: 0.9.8n
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8n
-      dockerfile: dockerfiles/0.9.8n/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8n
+        --file dockerfiles/0.9.8n/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -1774,13 +1716,11 @@ name: 0.9.8o
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8o
-      dockerfile: dockerfiles/0.9.8o/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8o
+        --file dockerfiles/0.9.8o/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -1835,13 +1775,11 @@ name: 0.9.8p
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8p
-      dockerfile: dockerfiles/0.9.8p/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8p
+        --file dockerfiles/0.9.8p/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -1896,13 +1834,11 @@ name: 0.9.8q
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8q
-      dockerfile: dockerfiles/0.9.8q/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8q
+        --file dockerfiles/0.9.8q/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -1957,13 +1893,11 @@ name: 0.9.8r
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8r
-      dockerfile: dockerfiles/0.9.8r/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8r
+        --file dockerfiles/0.9.8r/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -2018,13 +1952,11 @@ name: 0.9.8s
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8s
-      dockerfile: dockerfiles/0.9.8s/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8s
+        --file dockerfiles/0.9.8s/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -2079,13 +2011,11 @@ name: 0.9.8t
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8t
-      dockerfile: dockerfiles/0.9.8t/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8t
+        --file dockerfiles/0.9.8t/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -2140,13 +2070,11 @@ name: 0.9.8u
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8u
-      dockerfile: dockerfiles/0.9.8u/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8u
+        --file dockerfiles/0.9.8u/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -2201,13 +2129,11 @@ name: 0.9.8v
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8v
-      dockerfile: dockerfiles/0.9.8v/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8v
+        --file dockerfiles/0.9.8v/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -2262,13 +2188,11 @@ name: 0.9.8w
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8w
-      dockerfile: dockerfiles/0.9.8w/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8w
+        --file dockerfiles/0.9.8w/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -2323,13 +2247,11 @@ name: 0.9.8x
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8x
-      dockerfile: dockerfiles/0.9.8x/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8x
+        --file dockerfiles/0.9.8x/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -2384,13 +2306,11 @@ name: 0.9.8y
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8y
-      dockerfile: dockerfiles/0.9.8y/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8y
+        --file dockerfiles/0.9.8y/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -2445,13 +2365,11 @@ name: 0.9.8za
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8za
-      dockerfile: dockerfiles/0.9.8za/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8za
+        --file dockerfiles/0.9.8za/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -2506,13 +2424,11 @@ name: 0.9.8zb
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8zb
-      dockerfile: dockerfiles/0.9.8zb/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8zb
+        --file dockerfiles/0.9.8zb/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -2567,13 +2483,11 @@ name: 0.9.8zc
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8zc
-      dockerfile: dockerfiles/0.9.8zc/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8zc
+        --file dockerfiles/0.9.8zc/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -2628,13 +2542,11 @@ name: 0.9.8zd
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8zd
-      dockerfile: dockerfiles/0.9.8zd/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8zd
+        --file dockerfiles/0.9.8zd/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -2689,13 +2601,11 @@ name: 0.9.8ze
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8ze
-      dockerfile: dockerfiles/0.9.8ze/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8ze
+        --file dockerfiles/0.9.8ze/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -2750,13 +2660,11 @@ name: 0.9.8zf
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8zf
-      dockerfile: dockerfiles/0.9.8zf/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8zf
+        --file dockerfiles/0.9.8zf/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -2811,13 +2719,11 @@ name: 0.9.8zg
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8zg
-      dockerfile: dockerfiles/0.9.8zg/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8zg
+        --file dockerfiles/0.9.8zg/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -2872,13 +2778,11 @@ name: 0.9.8zh
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8zh
-      dockerfile: dockerfiles/0.9.8zh/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:0.9.8zh
+        --file dockerfiles/0.9.8zh/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -2933,13 +2837,11 @@ name: 1.0.0
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0
-      dockerfile: dockerfiles/1.0.0/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.0
+        --file dockerfiles/1.0.0/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -2994,13 +2896,11 @@ name: 1.0.0a
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0a
-      dockerfile: dockerfiles/1.0.0a/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.0a
+        --file dockerfiles/1.0.0a/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -3055,13 +2955,11 @@ name: 1.0.0b
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0b
-      dockerfile: dockerfiles/1.0.0b/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.0b
+        --file dockerfiles/1.0.0b/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -3116,13 +3014,11 @@ name: 1.0.0c
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0c
-      dockerfile: dockerfiles/1.0.0c/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.0c
+        --file dockerfiles/1.0.0c/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -3177,13 +3073,11 @@ name: 1.0.0d
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0d
-      dockerfile: dockerfiles/1.0.0d/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.0d
+        --file dockerfiles/1.0.0d/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -3238,13 +3132,11 @@ name: 1.0.0e
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0e
-      dockerfile: dockerfiles/1.0.0e/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.0e
+        --file dockerfiles/1.0.0e/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -3299,13 +3191,11 @@ name: 1.0.0f
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0f
-      dockerfile: dockerfiles/1.0.0f/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.0f
+        --file dockerfiles/1.0.0f/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -3360,13 +3250,11 @@ name: 1.0.0g
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0g
-      dockerfile: dockerfiles/1.0.0g/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.0g
+        --file dockerfiles/1.0.0g/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -3421,13 +3309,11 @@ name: 1.0.0h
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0h
-      dockerfile: dockerfiles/1.0.0h/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.0h
+        --file dockerfiles/1.0.0h/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -3482,13 +3368,11 @@ name: 1.0.0i
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0i
-      dockerfile: dockerfiles/1.0.0i/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.0i
+        --file dockerfiles/1.0.0i/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -3543,13 +3427,11 @@ name: 1.0.0j
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0j
-      dockerfile: dockerfiles/1.0.0j/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.0j
+        --file dockerfiles/1.0.0j/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -3604,13 +3486,11 @@ name: 1.0.0k
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0k
-      dockerfile: dockerfiles/1.0.0k/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.0k
+        --file dockerfiles/1.0.0k/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -3665,13 +3545,11 @@ name: 1.0.0l
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0l
-      dockerfile: dockerfiles/1.0.0l/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.0l
+        --file dockerfiles/1.0.0l/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -3726,13 +3604,11 @@ name: 1.0.0m
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0m
-      dockerfile: dockerfiles/1.0.0m/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.0m
+        --file dockerfiles/1.0.0m/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -3787,13 +3663,11 @@ name: 1.0.0n
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0n
-      dockerfile: dockerfiles/1.0.0n/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.0n
+        --file dockerfiles/1.0.0n/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -3848,13 +3722,11 @@ name: 1.0.0o
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0o
-      dockerfile: dockerfiles/1.0.0o/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.0o
+        --file dockerfiles/1.0.0o/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -3909,13 +3781,11 @@ name: 1.0.0p
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0p
-      dockerfile: dockerfiles/1.0.0p/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.0p
+        --file dockerfiles/1.0.0p/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -3970,13 +3840,11 @@ name: 1.0.0q
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0q
-      dockerfile: dockerfiles/1.0.0q/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.0q
+        --file dockerfiles/1.0.0q/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -4031,13 +3899,11 @@ name: 1.0.0r
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0r
-      dockerfile: dockerfiles/1.0.0r/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.0r
+        --file dockerfiles/1.0.0r/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -4092,13 +3958,11 @@ name: 1.0.0s
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0s
-      dockerfile: dockerfiles/1.0.0s/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.0s
+        --file dockerfiles/1.0.0s/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -4153,13 +4017,11 @@ name: 1.0.0t
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0t
-      dockerfile: dockerfiles/1.0.0t/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.0t
+        --file dockerfiles/1.0.0t/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -4214,13 +4076,11 @@ name: 1.0.1
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1
-      dockerfile: dockerfiles/1.0.1/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.1
+        --file dockerfiles/1.0.1/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -4299,13 +4159,11 @@ name: 1.0.1a
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1a
-      dockerfile: dockerfiles/1.0.1a/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.1a
+        --file dockerfiles/1.0.1a/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -4384,13 +4242,11 @@ name: 1.0.1b
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1b
-      dockerfile: dockerfiles/1.0.1b/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.1b
+        --file dockerfiles/1.0.1b/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -4469,13 +4325,11 @@ name: 1.0.1c
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1c
-      dockerfile: dockerfiles/1.0.1c/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.1c
+        --file dockerfiles/1.0.1c/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -4554,13 +4408,11 @@ name: 1.0.1d
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1d
-      dockerfile: dockerfiles/1.0.1d/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.1d
+        --file dockerfiles/1.0.1d/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -4639,13 +4491,11 @@ name: 1.0.1e
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1e
-      dockerfile: dockerfiles/1.0.1e/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.1e
+        --file dockerfiles/1.0.1e/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -4724,13 +4574,11 @@ name: 1.0.1f
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1f
-      dockerfile: dockerfiles/1.0.1f/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.1f
+        --file dockerfiles/1.0.1f/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -4809,13 +4657,11 @@ name: 1.0.1g
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1g
-      dockerfile: dockerfiles/1.0.1g/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.1g
+        --file dockerfiles/1.0.1g/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -4894,13 +4740,11 @@ name: 1.0.1h
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1h
-      dockerfile: dockerfiles/1.0.1h/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.1h
+        --file dockerfiles/1.0.1h/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -4979,13 +4823,11 @@ name: 1.0.1i
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1i
-      dockerfile: dockerfiles/1.0.1i/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.1i
+        --file dockerfiles/1.0.1i/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -5064,13 +4906,11 @@ name: 1.0.1j
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1j
-      dockerfile: dockerfiles/1.0.1j/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.1j
+        --file dockerfiles/1.0.1j/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -5149,13 +4989,11 @@ name: 1.0.1k
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1k
-      dockerfile: dockerfiles/1.0.1k/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.1k
+        --file dockerfiles/1.0.1k/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -5234,13 +5072,11 @@ name: 1.0.1l
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1l
-      dockerfile: dockerfiles/1.0.1l/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.1l
+        --file dockerfiles/1.0.1l/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -5319,13 +5155,11 @@ name: 1.0.1m
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1m
-      dockerfile: dockerfiles/1.0.1m/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.1m
+        --file dockerfiles/1.0.1m/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -5404,13 +5238,11 @@ name: 1.0.1n
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1n
-      dockerfile: dockerfiles/1.0.1n/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.1n
+        --file dockerfiles/1.0.1n/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -5489,13 +5321,11 @@ name: 1.0.1o
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1o
-      dockerfile: dockerfiles/1.0.1o/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.1o
+        --file dockerfiles/1.0.1o/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -5574,13 +5404,11 @@ name: 1.0.1p
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1p
-      dockerfile: dockerfiles/1.0.1p/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.1p
+        --file dockerfiles/1.0.1p/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -5659,13 +5487,11 @@ name: 1.0.1q
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1q
-      dockerfile: dockerfiles/1.0.1q/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.1q
+        --file dockerfiles/1.0.1q/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -5744,13 +5570,11 @@ name: 1.0.1r
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1r
-      dockerfile: dockerfiles/1.0.1r/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.1r
+        --file dockerfiles/1.0.1r/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -5829,13 +5653,11 @@ name: 1.0.1s
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1s
-      dockerfile: dockerfiles/1.0.1s/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.1s
+        --file dockerfiles/1.0.1s/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -5914,13 +5736,11 @@ name: 1.0.1t
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1t
-      dockerfile: dockerfiles/1.0.1t/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.1t
+        --file dockerfiles/1.0.1t/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -5999,13 +5819,11 @@ name: 1.0.1u
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1u
-      dockerfile: dockerfiles/1.0.1u/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.1u
+        --file dockerfiles/1.0.1u/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -6084,13 +5902,11 @@ name: 1.0.2
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2
-      dockerfile: dockerfiles/1.0.2/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.2
+        --file dockerfiles/1.0.2/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -6169,13 +5985,11 @@ name: 1.0.2a
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2a
-      dockerfile: dockerfiles/1.0.2a/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.2a
+        --file dockerfiles/1.0.2a/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -6254,13 +6068,11 @@ name: 1.0.2b
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2b
-      dockerfile: dockerfiles/1.0.2b/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.2b
+        --file dockerfiles/1.0.2b/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -6339,13 +6151,11 @@ name: 1.0.2c
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2c
-      dockerfile: dockerfiles/1.0.2c/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.2c
+        --file dockerfiles/1.0.2c/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -6424,13 +6234,11 @@ name: 1.0.2d
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2d
-      dockerfile: dockerfiles/1.0.2d/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.2d
+        --file dockerfiles/1.0.2d/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -6509,13 +6317,11 @@ name: 1.0.2e
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2e
-      dockerfile: dockerfiles/1.0.2e/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.2e
+        --file dockerfiles/1.0.2e/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -6594,13 +6400,11 @@ name: 1.0.2f
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2f
-      dockerfile: dockerfiles/1.0.2f/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.2f
+        --file dockerfiles/1.0.2f/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -6679,13 +6483,11 @@ name: 1.0.2g
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2g
-      dockerfile: dockerfiles/1.0.2g/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.2g
+        --file dockerfiles/1.0.2g/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -6764,13 +6566,11 @@ name: 1.0.2h
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2h
-      dockerfile: dockerfiles/1.0.2h/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.2h
+        --file dockerfiles/1.0.2h/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -6849,13 +6649,11 @@ name: 1.0.2i
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2i
-      dockerfile: dockerfiles/1.0.2i/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.2i
+        --file dockerfiles/1.0.2i/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -6934,13 +6732,11 @@ name: 1.0.2j
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2j
-      dockerfile: dockerfiles/1.0.2j/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.2j
+        --file dockerfiles/1.0.2j/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -7019,13 +6815,11 @@ name: 1.0.2k
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2k
-      dockerfile: dockerfiles/1.0.2k/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.2k
+        --file dockerfiles/1.0.2k/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -7104,13 +6898,11 @@ name: 1.0.2l
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2l
-      dockerfile: dockerfiles/1.0.2l/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.2l
+        --file dockerfiles/1.0.2l/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -7189,13 +6981,11 @@ name: 1.0.2m
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2m
-      dockerfile: dockerfiles/1.0.2m/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.2m
+        --file dockerfiles/1.0.2m/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -7274,13 +7064,11 @@ name: 1.0.2n
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2n
-      dockerfile: dockerfiles/1.0.2n/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.2n
+        --file dockerfiles/1.0.2n/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -7359,13 +7147,11 @@ name: 1.0.2o
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2o
-      dockerfile: dockerfiles/1.0.2o/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.2o
+        --file dockerfiles/1.0.2o/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -7444,13 +7230,11 @@ name: 1.0.2p
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2p
-      dockerfile: dockerfiles/1.0.2p/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.2p
+        --file dockerfiles/1.0.2p/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -7529,13 +7313,11 @@ name: 1.0.2q
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2q
-      dockerfile: dockerfiles/1.0.2q/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.2q
+        --file dockerfiles/1.0.2q/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -7614,13 +7396,11 @@ name: 1.0.2r
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2r
-      dockerfile: dockerfiles/1.0.2r/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.2r
+        --file dockerfiles/1.0.2r/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -7699,13 +7479,11 @@ name: 1.0.2s
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2s
-      dockerfile: dockerfiles/1.0.2s/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.0.2s
+        --file dockerfiles/1.0.2s/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -7784,13 +7562,11 @@ name: 1.1.0
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.0
-      dockerfile: dockerfiles/1.1.0/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.1.0
+        --file dockerfiles/1.1.0/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -7869,13 +7645,11 @@ name: 1.1.0a
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.0a
-      dockerfile: dockerfiles/1.1.0a/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.1.0a
+        --file dockerfiles/1.1.0a/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -7954,13 +7728,11 @@ name: 1.1.0b
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.0b
-      dockerfile: dockerfiles/1.1.0b/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.1.0b
+        --file dockerfiles/1.1.0b/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -8039,13 +7811,11 @@ name: 1.1.0c
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.0c
-      dockerfile: dockerfiles/1.1.0c/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.1.0c
+        --file dockerfiles/1.1.0c/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -8124,13 +7894,11 @@ name: 1.1.0d
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.0d
-      dockerfile: dockerfiles/1.1.0d/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.1.0d
+        --file dockerfiles/1.1.0d/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -8209,13 +7977,11 @@ name: 1.1.0e
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.0e
-      dockerfile: dockerfiles/1.1.0e/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.1.0e
+        --file dockerfiles/1.1.0e/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -8294,13 +8060,11 @@ name: 1.1.0f
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.0f
-      dockerfile: dockerfiles/1.1.0f/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.1.0f
+        --file dockerfiles/1.1.0f/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -8379,13 +8143,11 @@ name: 1.1.0g
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.0g
-      dockerfile: dockerfiles/1.1.0g/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.1.0g
+        --file dockerfiles/1.1.0g/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -8464,13 +8226,11 @@ name: 1.1.0h
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.0h
-      dockerfile: dockerfiles/1.1.0h/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.1.0h
+        --file dockerfiles/1.1.0h/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -8549,13 +8309,11 @@ name: 1.1.0i
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.0i
-      dockerfile: dockerfiles/1.1.0i/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.1.0i
+        --file dockerfiles/1.1.0i/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -8634,13 +8392,11 @@ name: 1.1.0j
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.0j
-      dockerfile: dockerfiles/1.1.0j/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.1.0j
+        --file dockerfiles/1.1.0j/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -8719,13 +8475,11 @@ name: 1.1.0k
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.0k
-      dockerfile: dockerfiles/1.1.0k/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.1.0k
+        --file dockerfiles/1.1.0k/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -8804,13 +8558,11 @@ name: 1.1.1
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.1
-      dockerfile: dockerfiles/1.1.1/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.1.1
+        --file dockerfiles/1.1.1/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -8889,13 +8641,11 @@ name: 1.1.1a
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.1a
-      dockerfile: dockerfiles/1.1.1a/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.1.1a
+        --file dockerfiles/1.1.1a/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -8974,13 +8724,11 @@ name: 1.1.1b
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.1b
-      dockerfile: dockerfiles/1.1.1b/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.1.1b
+        --file dockerfiles/1.1.1b/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
@@ -9059,13 +8807,11 @@ name: 1.1.1c
 steps:
     # Build the implementation and set the appropriate tag
   - name: build
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.1c
-      dockerfile: dockerfiles/1.1.1c/Dockerfile
-      dry_run: true  # Do not push at the end of this step
-      purge: false
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.1.1c
+        --file dockerfiles/1.1.1c/Dockerfile
 
     # Store the resulting image on the host docker, so it can be used in the
     # next step.
