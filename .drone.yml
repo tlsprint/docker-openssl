@@ -37,16 +37,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7
-      dockerfile: dockerfiles/0.9.7/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.7
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -93,16 +98,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7a
-      dockerfile: dockerfiles/0.9.7a/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.7a
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -149,16 +159,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7b
-      dockerfile: dockerfiles/0.9.7b/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.7b
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -205,16 +220,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7c
-      dockerfile: dockerfiles/0.9.7c/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.7c
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -261,16 +281,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7d
-      dockerfile: dockerfiles/0.9.7d/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.7d
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -317,16 +342,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7e
-      dockerfile: dockerfiles/0.9.7e/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.7e
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -373,16 +403,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7f
-      dockerfile: dockerfiles/0.9.7f/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.7f
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -429,16 +464,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7g
-      dockerfile: dockerfiles/0.9.7g/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.7g
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -485,16 +525,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7h
-      dockerfile: dockerfiles/0.9.7h/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.7h
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -541,16 +586,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7i
-      dockerfile: dockerfiles/0.9.7i/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.7i
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -597,16 +647,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7j
-      dockerfile: dockerfiles/0.9.7j/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.7j
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -653,16 +708,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7k
-      dockerfile: dockerfiles/0.9.7k/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.7k
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -709,16 +769,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7l
-      dockerfile: dockerfiles/0.9.7l/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.7l
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -765,16 +830,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.7m
-      dockerfile: dockerfiles/0.9.7m/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.7m
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -821,16 +891,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8
-      dockerfile: dockerfiles/0.9.8/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -877,16 +952,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8a
-      dockerfile: dockerfiles/0.9.8a/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8a
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -933,16 +1013,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8b
-      dockerfile: dockerfiles/0.9.8b/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8b
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -989,16 +1074,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8c
-      dockerfile: dockerfiles/0.9.8c/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8c
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -1045,16 +1135,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8d
-      dockerfile: dockerfiles/0.9.8d/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8d
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -1101,16 +1196,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8e
-      dockerfile: dockerfiles/0.9.8e/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8e
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -1157,16 +1257,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8f
-      dockerfile: dockerfiles/0.9.8f/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8f
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -1213,16 +1318,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8g
-      dockerfile: dockerfiles/0.9.8g/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8g
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -1269,16 +1379,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8h
-      dockerfile: dockerfiles/0.9.8h/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8h
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -1325,16 +1440,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8i
-      dockerfile: dockerfiles/0.9.8i/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8i
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -1381,16 +1501,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8j
-      dockerfile: dockerfiles/0.9.8j/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8j
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -1437,16 +1562,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8k
-      dockerfile: dockerfiles/0.9.8k/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8k
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -1493,16 +1623,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8l
-      dockerfile: dockerfiles/0.9.8l/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8l
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -1549,16 +1684,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8m
-      dockerfile: dockerfiles/0.9.8m/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8m
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -1605,16 +1745,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8n
-      dockerfile: dockerfiles/0.9.8n/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8n
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -1661,16 +1806,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8o
-      dockerfile: dockerfiles/0.9.8o/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8o
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -1717,16 +1867,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8p
-      dockerfile: dockerfiles/0.9.8p/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8p
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -1773,16 +1928,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8q
-      dockerfile: dockerfiles/0.9.8q/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8q
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -1829,16 +1989,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8r
-      dockerfile: dockerfiles/0.9.8r/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8r
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -1885,16 +2050,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8s
-      dockerfile: dockerfiles/0.9.8s/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8s
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -1941,16 +2111,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8t
-      dockerfile: dockerfiles/0.9.8t/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8t
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -1997,16 +2172,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8u
-      dockerfile: dockerfiles/0.9.8u/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8u
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -2053,16 +2233,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8v
-      dockerfile: dockerfiles/0.9.8v/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8v
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -2109,16 +2294,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8w
-      dockerfile: dockerfiles/0.9.8w/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8w
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -2165,16 +2355,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8x
-      dockerfile: dockerfiles/0.9.8x/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8x
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -2221,16 +2416,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8y
-      dockerfile: dockerfiles/0.9.8y/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8y
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -2277,16 +2477,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8za
-      dockerfile: dockerfiles/0.9.8za/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8za
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -2333,16 +2538,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8zb
-      dockerfile: dockerfiles/0.9.8zb/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8zb
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -2389,16 +2599,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8zc
-      dockerfile: dockerfiles/0.9.8zc/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8zc
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -2445,16 +2660,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8zd
-      dockerfile: dockerfiles/0.9.8zd/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8zd
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -2501,16 +2721,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8ze
-      dockerfile: dockerfiles/0.9.8ze/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8ze
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -2557,16 +2782,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8zf
-      dockerfile: dockerfiles/0.9.8zf/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8zf
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -2613,16 +2843,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8zg
-      dockerfile: dockerfiles/0.9.8zg/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8zg
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -2669,16 +2904,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 0.9.8zh
-      dockerfile: dockerfiles/0.9.8zh/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:0.9.8zh
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -2725,16 +2965,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0
-      dockerfile: dockerfiles/1.0.0/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.0
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -2781,16 +3026,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0a
-      dockerfile: dockerfiles/1.0.0a/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.0a
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -2837,16 +3087,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0b
-      dockerfile: dockerfiles/1.0.0b/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.0b
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -2893,16 +3148,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0c
-      dockerfile: dockerfiles/1.0.0c/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.0c
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -2949,16 +3209,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0d
-      dockerfile: dockerfiles/1.0.0d/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.0d
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -3005,16 +3270,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0e
-      dockerfile: dockerfiles/1.0.0e/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.0e
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -3061,16 +3331,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0f
-      dockerfile: dockerfiles/1.0.0f/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.0f
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -3117,16 +3392,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0g
-      dockerfile: dockerfiles/1.0.0g/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.0g
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -3173,16 +3453,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0h
-      dockerfile: dockerfiles/1.0.0h/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.0h
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -3229,16 +3514,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0i
-      dockerfile: dockerfiles/1.0.0i/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.0i
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -3285,16 +3575,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0j
-      dockerfile: dockerfiles/1.0.0j/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.0j
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -3341,16 +3636,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0k
-      dockerfile: dockerfiles/1.0.0k/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.0k
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -3397,16 +3697,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0l
-      dockerfile: dockerfiles/1.0.0l/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.0l
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -3453,16 +3758,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0m
-      dockerfile: dockerfiles/1.0.0m/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.0m
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -3509,16 +3819,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0n
-      dockerfile: dockerfiles/1.0.0n/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.0n
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -3565,16 +3880,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0o
-      dockerfile: dockerfiles/1.0.0o/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.0o
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -3621,16 +3941,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0p
-      dockerfile: dockerfiles/1.0.0p/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.0p
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -3677,16 +4002,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0q
-      dockerfile: dockerfiles/1.0.0q/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.0q
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -3733,16 +4063,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0r
-      dockerfile: dockerfiles/1.0.0r/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.0r
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -3789,16 +4124,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0s
-      dockerfile: dockerfiles/1.0.0s/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.0s
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -3845,16 +4185,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.0t
-      dockerfile: dockerfiles/1.0.0t/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.0t
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -3925,16 +4270,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1
-      dockerfile: dockerfiles/1.0.1/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.1
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -4005,16 +4355,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1a
-      dockerfile: dockerfiles/1.0.1a/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.1a
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -4085,16 +4440,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1b
-      dockerfile: dockerfiles/1.0.1b/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.1b
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -4165,16 +4525,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1c
-      dockerfile: dockerfiles/1.0.1c/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.1c
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -4245,16 +4610,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1d
-      dockerfile: dockerfiles/1.0.1d/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.1d
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -4325,16 +4695,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1e
-      dockerfile: dockerfiles/1.0.1e/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.1e
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -4405,16 +4780,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1f
-      dockerfile: dockerfiles/1.0.1f/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.1f
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -4485,16 +4865,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1g
-      dockerfile: dockerfiles/1.0.1g/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.1g
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -4565,16 +4950,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1h
-      dockerfile: dockerfiles/1.0.1h/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.1h
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -4645,16 +5035,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1i
-      dockerfile: dockerfiles/1.0.1i/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.1i
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -4725,16 +5120,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1j
-      dockerfile: dockerfiles/1.0.1j/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.1j
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -4805,16 +5205,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1k
-      dockerfile: dockerfiles/1.0.1k/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.1k
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -4885,16 +5290,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1l
-      dockerfile: dockerfiles/1.0.1l/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.1l
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -4965,16 +5375,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1m
-      dockerfile: dockerfiles/1.0.1m/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.1m
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -5045,16 +5460,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1n
-      dockerfile: dockerfiles/1.0.1n/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.1n
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -5125,16 +5545,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1o
-      dockerfile: dockerfiles/1.0.1o/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.1o
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -5205,16 +5630,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1p
-      dockerfile: dockerfiles/1.0.1p/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.1p
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -5285,16 +5715,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1q
-      dockerfile: dockerfiles/1.0.1q/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.1q
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -5365,16 +5800,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1r
-      dockerfile: dockerfiles/1.0.1r/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.1r
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -5445,16 +5885,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1s
-      dockerfile: dockerfiles/1.0.1s/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.1s
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -5525,16 +5970,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1t
-      dockerfile: dockerfiles/1.0.1t/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.1t
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -5605,16 +6055,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.1u
-      dockerfile: dockerfiles/1.0.1u/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.1u
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -5685,16 +6140,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2
-      dockerfile: dockerfiles/1.0.2/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.2
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -5765,16 +6225,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2a
-      dockerfile: dockerfiles/1.0.2a/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.2a
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -5845,16 +6310,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2b
-      dockerfile: dockerfiles/1.0.2b/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.2b
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -5925,16 +6395,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2c
-      dockerfile: dockerfiles/1.0.2c/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.2c
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -6005,16 +6480,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2d
-      dockerfile: dockerfiles/1.0.2d/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.2d
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -6085,16 +6565,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2e
-      dockerfile: dockerfiles/1.0.2e/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.2e
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -6165,16 +6650,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2f
-      dockerfile: dockerfiles/1.0.2f/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.2f
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -6245,16 +6735,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2g
-      dockerfile: dockerfiles/1.0.2g/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.2g
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -6325,16 +6820,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2h
-      dockerfile: dockerfiles/1.0.2h/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.2h
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -6405,16 +6905,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2i
-      dockerfile: dockerfiles/1.0.2i/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.2i
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -6485,16 +6990,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2j
-      dockerfile: dockerfiles/1.0.2j/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.2j
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -6565,16 +7075,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2k
-      dockerfile: dockerfiles/1.0.2k/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.2k
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -6645,16 +7160,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2l
-      dockerfile: dockerfiles/1.0.2l/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.2l
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -6725,16 +7245,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2m
-      dockerfile: dockerfiles/1.0.2m/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.2m
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -6805,16 +7330,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2n
-      dockerfile: dockerfiles/1.0.2n/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.2n
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -6885,16 +7415,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2o
-      dockerfile: dockerfiles/1.0.2o/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.2o
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -6965,16 +7500,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2p
-      dockerfile: dockerfiles/1.0.2p/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.2p
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -7045,16 +7585,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2q
-      dockerfile: dockerfiles/1.0.2q/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.2q
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -7125,16 +7670,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2r
-      dockerfile: dockerfiles/1.0.2r/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.2r
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -7205,16 +7755,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.0.2s
-      dockerfile: dockerfiles/1.0.2s/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.0.2s
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -7285,16 +7840,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.0
-      dockerfile: dockerfiles/1.1.0/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.1.0
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -7365,16 +7925,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.0a
-      dockerfile: dockerfiles/1.1.0a/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.1.0a
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -7445,16 +8010,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.0b
-      dockerfile: dockerfiles/1.1.0b/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.1.0b
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -7525,16 +8095,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.0c
-      dockerfile: dockerfiles/1.1.0c/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.1.0c
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -7605,16 +8180,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.0d
-      dockerfile: dockerfiles/1.1.0d/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.1.0d
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -7685,16 +8265,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.0e
-      dockerfile: dockerfiles/1.1.0e/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.1.0e
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -7765,16 +8350,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.0f
-      dockerfile: dockerfiles/1.1.0f/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.1.0f
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -7845,16 +8435,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.0g
-      dockerfile: dockerfiles/1.1.0g/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.1.0g
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -7925,16 +8520,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.0h
-      dockerfile: dockerfiles/1.1.0h/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.1.0h
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -8005,16 +8605,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.0i
-      dockerfile: dockerfiles/1.1.0i/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.1.0i
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -8085,16 +8690,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.0j
-      dockerfile: dockerfiles/1.1.0j/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.1.0j
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -8165,16 +8775,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.0k
-      dockerfile: dockerfiles/1.1.0k/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.1.0k
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -8245,16 +8860,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.1
-      dockerfile: dockerfiles/1.1.1/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.1.1
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -8325,16 +8945,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.1a
-      dockerfile: dockerfiles/1.1.1a/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.1.1a
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -8405,16 +9030,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.1b
-      dockerfile: dockerfiles/1.1.1b/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.1.1b
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
@@ -8485,16 +9115,21 @@ steps:
       - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
 
   - name: publish
-    image: plugins/docker
-    settings:
-      repo: tlsprint/openssl
-      tags: 1.1.1c
-      dockerfile: dockerfiles/1.1.1c/Dockerfile
-      username:
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.1.1c
+    environment:
+      DOCKER_USERNAME:
         from_secret: docker_username
-      password:
+      DOCKER_PASSWORD:
         from_secret: docker_password
-      purge: false
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
 
 volumes:
     # Expose host docker to build steps
