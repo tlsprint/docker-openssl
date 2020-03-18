@@ -9739,3 +9739,90 @@ volumes:
     host:
       path: /var/run/docker.sock
 
+---
+kind: pipeline
+name: 1.1.1e
+
+steps:
+    # Build the implementation and set the appropriate tag
+  - name: build
+    image: docker
+    commands:
+      - docker build .
+        --tag tlsprint/openssl:1.1.1e
+        --file dockerfiles/1.1.1e/Dockerfile
+
+    # Store the resulting image on the host docker, so it can be used in the
+    # next step.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
+    # Start the implementation, the system under test, in the background
+  - name: sut
+    image: tlsprint/openssl:1.1.1e
+    detach: true
+
+  - name: verify TLS10
+    image: tlsprint/tlsattackerconnector
+    commands:
+      - sleep 5
+      - connector
+        --targetHost sut
+        --protocolVersion TLS10
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --merge-application
+        --test | tee result.log
+      - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
+
+  - name: verify TLS11
+    image: tlsprint/tlsattackerconnector
+    commands:
+      - sleep 5
+      - connector
+        --targetHost sut
+        --protocolVersion TLS11
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --merge-application
+        --test | tee result.log
+      - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
+
+  - name: verify TLS12
+    image: tlsprint/tlsattackerconnector
+    commands:
+      - sleep 5
+      - connector
+        --targetHost sut
+        --protocolVersion TLS12
+        --cipherSuite "TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA"
+        --merge-application
+        --test | tee result.log
+      - "grep -e 'ApplicationData: APPLICATION|ConnectionClosed' -e 'ApplicationData: APPLICATION|ALERT_WARNING_CLOSE_NOTIFY|ConnectionClosed' result.log"
+
+  - name: publish
+    image: docker
+    commands:
+      - docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
+      - docker push tlsprint/openssl:1.1.1e
+    environment:
+      DOCKER_USERNAME:
+        from_secret: docker_username
+      DOCKER_PASSWORD:
+        from_secret: docker_password
+
+    # Give access to host docker, the previously build image is available here.
+    volumes:
+      - name: docker
+        path: /var/run/docker.sock
+
+    when:
+      branch:
+        - master
+
+
+volumes:
+    # Expose host docker to build steps
+  - name: docker
+    host:
+      path: /var/run/docker.sock
+
